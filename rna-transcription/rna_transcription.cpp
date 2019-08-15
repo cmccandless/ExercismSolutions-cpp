@@ -14,7 +14,7 @@ char transcription::to_rna(char ch)
 
 std::string transcription::to_rna(std::string s)
 {
-	auto ss = std::stringstream();
+	std::stringstream ss;
 	for (auto const &ch : s) ss << to_rna(ch);
 	return ss.str();
 }
