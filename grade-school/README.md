@@ -1,6 +1,7 @@
 # Grade School
 
-Given students' names along with the grade that they are in, create a roster for the school
+Given students' names along with the grade that they are in, create a roster
+for the school.
 
 In the end, you should be able to:
 
@@ -20,7 +21,6 @@ In the end, you should be able to:
 Note that all our students only have one name.  (It's a small town, what
 do you want?)
 
-
 ## For bonus points
 
 Did you get the tests passing and the code clean? If you want to, these
@@ -36,8 +36,9 @@ experiment make the code better? Worse? Did you learn anything from it?
 
 ## Getting Started
 
-Make sure you have read [the C++ page](http://exercism.io/languages/cpp) on
-exercism.io.  This covers the basic information on setting up the development
+Make sure you have read the [Installing](https://exercism.io/tracks/cpp/installation) and
+[Running the Tests](https://exercism.io/tracks/cpp/tests) pages for C++ on exercism.io.
+This covers the basic information on setting up the development
 environment expected by the exercises.
 
 ## Passing the Tests
@@ -69,6 +70,5 @@ are new to C++, but have programmed in C, beware of
 
 A pairing session with Phil Battos at gSchool [http://gschool.it](http://gschool.it)
 
-## Submitting Incomplete Problems
+## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-

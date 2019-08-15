@@ -6,19 +6,17 @@
 #include <string>
 #include <vector>
 
-using namespace std;
-
 namespace grade_school
 {
 	class school
 	{
 	private:
-		map<int, vector<string>> _roster;
+		std::map<int, std::vector<std::string>> _roster;
 	public:
 		school();
-		map<int, vector<string>> roster();
-		void add(string, int);
-		vector<string> grade(int);
+		std::map<int, std::vector<std::string>> roster();
+		void add(std::string, int);
+		std::vector<std::string> grade(int);
 	};
 }
 
