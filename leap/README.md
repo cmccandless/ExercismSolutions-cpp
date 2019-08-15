@@ -4,7 +4,7 @@ Given a year, report if it is a leap year.
 
 The tricky thing here is that a leap year in the Gregorian calendar occurs:
 
-```plain
+```text
 on every year that is evenly divisible by 4
   except every year that is evenly divisible by 100
     unless the year is also evenly divisible by 400
@@ -12,9 +12,6 @@ on every year that is evenly divisible by 4
 
 For example, 1997 is not a leap year, but 1996 is.  1900 is not a leap
 year, but 2000 is.
-
-If your language provides a method in the standard library that does
-this look-up, pretend it doesn't exist and implement it yourself.
 
 ## Notes
 
@@ -28,8 +25,9 @@ phenomenon, go watch [this youtube video][video].
 
 ## Getting Started
 
-Make sure you have read [the C++ page](http://exercism.io/languages/cpp) on
-exercism.io.  This covers the basic information on setting up the development
+Make sure you have read the [Installing](https://exercism.io/tracks/cpp/installation) and
+[Running the Tests](https://exercism.io/tracks/cpp/tests) pages for C++ on exercism.io.
+This covers the basic information on setting up the development
 environment expected by the exercises.
 
 ## Passing the Tests
@@ -61,6 +59,5 @@ are new to C++, but have programmed in C, beware of
 
 JavaRanch Cattle Drive, exercise 3 [http://www.javaranch.com/leap.jsp](http://www.javaranch.com/leap.jsp)
 
-## Submitting Incomplete Problems
+## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-
