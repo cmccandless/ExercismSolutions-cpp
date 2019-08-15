@@ -32,4 +32,4 @@ install:
   - sudo apt-get -y install cmake
 
 script:
-  - make test
+  - make test || cmake --help
