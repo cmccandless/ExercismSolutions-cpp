@@ -22,7 +22,7 @@ else
 
 EXERCISE := $(notdir $(CWD))
 BINARY := .build/$(EXERCISE)
-SOURCES := $(shell find . -maxdepth 1 -type f -iname '*.cpp' | grep -iv '_test.cpp')
+SOURCES := $(shell find . -maxdepth 1 -type f -iname '*.cpp')
 HEADERS := $(shell find . -maxdepth 1 -type f \( -iname '*.h' -o -iname '*.hpp' \))
 CMAKE_OUTPUT := .build/Makefile
 
