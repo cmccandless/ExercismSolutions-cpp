@@ -28,15 +28,13 @@ CMAKE_OUTPUT := .build/Makefile
 
 .PHONY: clean print-env
 
-all: test
-
 print-env:
 	@ echo "EXERCISE=$(EXERCISE)"
 	@ echo "BINARY=$(BINARY)"
 	@ echo "SOURCES=$(SOURCES)"
 	@ echo "HEADERS=$(HEADERS)"
 
-test: print-env $(BINARY)
+test: $(BINARY)
 $(BINARY): $(CMAKE_OUTPUT) $(HEADERS) $(SOURCES)
 	make --directory=.build/
 
