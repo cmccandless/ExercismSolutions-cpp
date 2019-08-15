@@ -1,24 +1,14 @@
 #include "nucleotide_count.h"
 
-using namespace std;
-
 namespace dna
 {
+	std::string KEYS = "ACGT";
 	bool valid(char ch)
 	{
-		switch (ch)
-		{
-		case 'A':
-		case 'C':
-		case 'G':
-		case 'T':
-			return true;
-		default:
-			return false;
-		}
+		return KEYS.find(ch) != std::string::npos;
 	}
 
-	counter::counter(const string s) : nucleotides(s)
+	counter::counter(const std::string s) : nucleotides(s)
 	{
 		for (auto &ch : nucleotides)
 		{
@@ -26,9 +16,10 @@ namespace dna
 		}
 	}
 
-	map<char, int> counter::nucleotide_counts() const
+	std::map<char, int> counter::nucleotide_counts() const
 	{
-		map<char, int> dict = { { 'A', 0 }, { 'C', 0 }, { 'G', 0 }, { 'T', 0 }, };
+		std::map<char, int> dict;
+		for (int i = 0; i < (int)KEYS.length(); i++) dict[KEYS[i]] = 0;
 		for (auto &ch : nucleotides) dict[ch]++;
 		return dict;
 	}
