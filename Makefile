@@ -41,7 +41,7 @@ $(BINARY): $(CMAKE_OUTPUT) $(HEADERS) $(SOURCES)
 $(CMAKE_OUTPUT): CMakeLists.txt
 	@ echo "CWD=$(CWD)"
 	@ mkdir -p .build/ > /dev/null
-	cmake -G "Unix Makefiles" -S . -B .build/
+	cd .build/ && cmake -G "Unix Makefiles" ..
 
 clean:
 	rm -rf .build/
