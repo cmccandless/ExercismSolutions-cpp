@@ -2,7 +2,7 @@
 
 namespace squares
 {
-	int square_of_sums(int n)
+	int square_of_sum(int n)
 	{
 		int result = 0;
 		for (;n > 0;n--) result += n;
@@ -18,6 +18,6 @@ namespace squares
 
 	int difference(int n)
 	{
-		return square_of_sums(n) - sum_of_squares(n);
+		return square_of_sum(n) - sum_of_squares(n);
 	}
 }
