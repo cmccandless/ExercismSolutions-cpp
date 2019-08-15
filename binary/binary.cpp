@@ -1,6 +1,6 @@
 #include "binary.h"
 
-int binary::convert(string s)
+int binary::convert(std::string s)
 {
 	auto result = 0;
 	for (auto const &ch : s)
