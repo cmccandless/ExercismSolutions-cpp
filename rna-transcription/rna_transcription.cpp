@@ -12,9 +12,9 @@ char transcription::to_rna(char ch)
 	return '\0';
 }
 
-string transcription::to_rna(string s)
+std::string transcription::to_rna(std::string s)
 {
-	auto ss = stringstream();
+	auto ss = std::stringstream();
 	for (auto const &ch : s) ss << to_rna(ch);
 	return ss.str();
 }

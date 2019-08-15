@@ -4,12 +4,10 @@
 #include <sstream>
 #include <string>
 
-using namespace std;
-
 namespace transcription
 {
 	char to_rna(char);
-	string to_rna(string);
+	std::string to_rna(std::string);
 }
 
 #endif
